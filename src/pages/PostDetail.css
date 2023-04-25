@@ -1,0 +1,57 @@
+div {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #F5F5F5;
+    padding: 20px;
+    position: relative;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .card button.editButton::before {
+    content: "\270E";
+  }
+  
+  .card button.deleteButton::before {
+    content: "\1F5D1";
+  }
+  
+  .votes-section {
+    margin-top: 20px;
+  }
+  
+  .votes-section button {
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  
+  .comment-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .deleteButton{
+    color: black;
+  }

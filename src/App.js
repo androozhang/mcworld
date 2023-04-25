@@ -1,69 +1,64 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import { useRoutes } from 'react-router-dom'
-
-import ReadPlayers from './pages/ReadPlayers'
-import CreatePlayer from './pages/CreatePlayer'
-import EditPlayer from './pages/EditPlayer'
-import PlayerDetail from './pages/PlayerDetail'
-import { Link } from 'react-router-dom'
+import ReadPosts from './pages/ReadPosts'
+import CreatePost from './pages/CreatePost'
+import EditPost from './pages/EditPost'
+import PostDetail from './pages/PostDetail'
+import Navbar from './components/Navbar';
 
 // Import supabase client
 import { supabase } from './client'
 
 const App = () => {
   
-  const [players, setPlayers] = useState({
-    name: '',
-    uuid: '',
-    description: ''
+  const [posts, setPosts] = useState({
+    title: '',
+    description: '',
+    vote: ''
 }); // State for storing fetched posts
 
   useEffect(() => {
     // Fetch posts from database on component mount
-    fetchPlayers();
+    fetchPosts();
   }, []);
 
   
 
   
   // Fetch posts from Supabase database
-  const fetchPlayers = async () => {
+  const fetchPosts = async () => {
     const { data } = await supabase
-      .from('Players')
+      .from('Post')
       .select();
 
     // Set state of posts
-    setPlayers(data);
+    setPosts(data);
   }
 
   // Sets up routes
   let element = useRoutes([
     {
       path: "/",
-      element:<ReadPlayers data={players}/>
+      element:<ReadPosts data={posts}/>
     },
     {
       path:"/edit/:id",
-      element: <EditPlayer data={players} />
+      element: <EditPost data={posts} />
     },
     {
-      path:"/player/:id",
-      element: <PlayerDetail data={players} />
+      path:"/post/:id",
+      element: <PostDetail data={posts} />
     },
     {
       path:"/new",
-      element: <CreatePlayer />
+      element: <CreatePost />
     }
   ]);
 
   return ( 
     <div className="App">
-      <div className="header">
-        <h1>Me MC World</h1>
-        <Link to="/"><button className="headerBtn"> Explore Players 🔍  </button></Link>
-        <Link to="/new"><button className="headerBtn"> Enter World  </button></Link>
-      </div>
+      <Navbar />
       {element}
     </div>
   );

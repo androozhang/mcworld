@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-image: url('img/background.png');
+  background-color: #E6E6E6;
   background-repeat: no-repeat;
   background-size: cover;
 
