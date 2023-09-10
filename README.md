@@ -1,37 +1,26 @@
-# Web Development Final Project - *AMA Thread*
+# Web Development Project 7 - *MC World*
 
-Submitted by: **Andrew**
+Submitted by: **Andrew Zhange**
 
-This web app: **Ask me anything**
+This web app: **Add players to a mc world using UUID**
 
-Time spent: **10** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [X] **A create form that allows the user to create posts**
-- [X] **Posts have a title and optionally additional textual content and/or an image added as an external image URL**
-- [X] **A home feed displaying previously created posts**
-- [X] **By default, the time created, title, and number of upvotes for each post is shown on the feed**
-- [X] **Clicking on a post shall direct the user to a new page for the selected post**
-- [ ] **Users can sort posts by either their created time or upvotes count**
-- [ ] **Users can search for posts by title**
-- [X] **A separate post page for each created post, where any additional information is shown is linked whenever a user clicks a post**
-- [X] **Users can leave comments underneath a post on the post's separate page**
-- [X] **Each post should have an upvote button on the post's page. Each click increases its upvotes count by one and users can upvote any number of times**
-- [X] **A previously created post can be edited or deleted from its post page**
+- [X] **A create form allows users to add new cremates**
+- [X] **Users can name the crewmate and set the crewmate's attributes by clicking on one of several values**
+- [X] **The site displays a summary page of all the user's added crewmates**
+- [X] **A previously created crewmate can be updated and deleted from the crewmate list**
+- [X] **Each crewmate has a direct, unique link to an info page about them**
 
 The following **optional** features are implemented:
 
-- [ ] Users can only edit and deleted posts or delete comments by entering the secret key, which is set by the user during post creation
-- [ ] Upon launching the web app, the user is assigned a random user ID. It will be associated with all posts and comments that they make and displayed on them.
-- [ ] Users can repost a previous post by referencing its post ID. On the post page of the new post, the referenced post is displayed and linked, creating a thread
-- [ ] Users can customize the interface of the web app
-- [ ] Users can share and view web videos
-- [ ] Users can set flags while creating a post. Then users can filter posts by flags on the home feed.
-- [ ] Users can upload images directly from their local machine as an image file
-- [ ] Display a loading animation whenever data is being fetched
+- [ ] A crewmate can be given a category upon creation which restricts their attributes
+- [ ] The site displays summary statistics about a user's crew on their crew page 
+- [ ] The site displays a custom "success" metric about a user's crew which changes the look of the crewmate list
 
 The following **additional** features are implemented:
 
@@ -41,8 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Kapture 2023-04-25 at 00 13 45](https://user-images.githubusercontent.com/82245268/234174623-4265bd58-a2fa-4363-83f0-a143b8edfd8a.gif)
-
+https://user-images.githubusercontent.com/82245268/231037070-8b445000-a8ad-4b90-a0a0-87107d5232d6.mp4
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
